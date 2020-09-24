@@ -1,0 +1,7 @@
+{
+  "domain": "alsa_grpc",
+  "name": "Alsa GRPC",
+  "documentation": "",
+  "requirements": ["alsa_grpc_client==0.0.11", "grpcio ~= 1.32"],
+  "codeowners": []
+}
