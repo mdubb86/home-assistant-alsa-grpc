@@ -62,7 +62,6 @@ class AlsaGrpcControlEntity(MediaPlayerEntity):
         """Initialize the alsa-grpc control entity."""
         self._ctrl = ctrl
         self._uid = f'alsa_{prefix}_{ctrl.name.lower()}'
-        self._name = f'{prefix}_{ctrl.name.lower()}_alsa_control'
         self._state = STATE_IDLE
         self._volume = ctrl.volume[0] / 100
 
@@ -85,11 +84,6 @@ class AlsaGrpcControlEntity(MediaPlayerEntity):
     def unique_id(self):
         """Return the unique ID of the control"""
         return self._uid
-
-    @property
-    def name(self):
-        """Return the name of the control."""
-        return self._name
 
     @property
     def volume_level(self):
