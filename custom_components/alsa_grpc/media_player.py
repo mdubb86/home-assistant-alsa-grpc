@@ -61,7 +61,7 @@ class AlsaGrpcControlEntity(MediaPlayerEntity):
     def __init__(self, prefix, ctrl):
         """Initialize the alsa-grpc control entity."""
         self._ctrl = ctrl
-        self._uid = f'alsa_{prefix}_{ctrl.name.lower()}'
+        self._uid = f'{prefix}_{ctrl.name.lower()}'
         self._state = STATE_IDLE
         self._volume = ctrl.volume[0] / 100
 
