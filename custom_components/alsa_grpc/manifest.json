@@ -3,6 +3,6 @@
   "version": "1.1.0",
   "name": "Alsa GRPC",
   "documentation": "",
-  "requirements": ["alsa_grpc_client==0.0.12", "grpcio ~= 1.57.0"],
+  "requirements": ["alsa_grpc_client==0.0.12"],
   "codeowners": []
 }
